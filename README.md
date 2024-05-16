@@ -41,9 +41,10 @@ Since the source files for the compiler are part of the USF course curriculum, t
 
 Otherwise, download the executable for DJC as well as the sim-dism interpreter.
 
-### Prerequisites
-
 <!-- USAGE EXAMPLES -->
 ## Usage
-
+After generating the executable for the compiler as well as the DISM simulator, compile the test case programs using
+```sh
+djc filename.dj
+```
  
