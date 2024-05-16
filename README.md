@@ -3,7 +3,7 @@
 <h1 align="center">DJC - Diminished Java Compiler</h1>
 
   <p align="center">
-    A straightforward compiler for a simple, but complete OOPL
+    A straightforward compiler for a simple, but complete Object Oriented Programming Language
   </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -37,6 +37,9 @@ DJC is a compiler built for Diminished Java (DJ), a programming language develop
 
 <!-- GETTING STARTED -->
 ## Getting Started
+Since the source files for the compiler are part of the USF course curriculum, they are not directly available in this repo. In order to access all the source files for DJC, request access using Google drive.
+
+Otherwise, download the executable for DJC as well as the sim-dism interpreter.
 
 ### Prerequisites
 
