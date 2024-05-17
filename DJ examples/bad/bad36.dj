@@ -1,0 +1,12 @@
+class C extends Object {
+  nat n;
+  nat foo(nat unused) {
+    nat n;//This is not an error; the local variable n
+          //punctures the scope of the 
+          //variable field n declared on line 2
+    //syntax error: no method body
+  }
+}
+main {
+0;
+}

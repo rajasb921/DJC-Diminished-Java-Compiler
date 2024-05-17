@@ -1,0 +1,17 @@
+class C extends Object {
+  nat foo(Object o) {
+    nat i;
+    0;
+  }
+}
+class C2 extends C {
+  nat v2;
+}
+class C3 extends C2 {
+  nat v2; //Var declared multiple times 
+          //(here and in a superclass)
+}
+main {
+  C o;
+  0;
+}

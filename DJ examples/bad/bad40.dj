@@ -1,0 +1,7 @@
+class C extends Object{}
+main{
+  C c;
+  c = new C();
+  c.foo(0); //Undefined method
+  0;
+}

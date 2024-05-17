@@ -1,0 +1,6 @@
+main{
+  Object o;
+  o = new Object();
+  o.v; //expression type does not support dot operator
+  0;
+}

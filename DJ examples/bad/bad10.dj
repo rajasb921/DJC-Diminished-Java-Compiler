@@ -1,0 +1,10 @@
+class C extends Object {
+  nat foo(Object o) {
+    nat o;   //error: o already declared
+    0;
+  }
+}
+main {
+  nat o;
+  0;
+}

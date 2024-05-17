@@ -1,0 +1,9 @@
+class C extends Object {
+  static nat n;
+}
+main {
+  printNat(C.n); //Unknown identifier 
+                 //(C is not a known variable name)
+                 //(DJ only allows static fields to be accessed on objects,
+                 // not on class names)
+}

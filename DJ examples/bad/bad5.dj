@@ -1,0 +1,8 @@
+class C extends Object {
+  nat foo(nat n) {0;}
+  //Error: method defined multiple times
+  Object foo(Object o) {0;} 
+}
+main {
+  0;
+}

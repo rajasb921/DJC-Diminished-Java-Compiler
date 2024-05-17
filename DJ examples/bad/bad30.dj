@@ -1,0 +1,29 @@
+class C extends Object {
+  nat foo(Object o) {
+    nat i;
+    0;
+  }
+  nat bar(C3 c3) {0;}
+}
+class C2 extends C {
+  nat v2;
+}
+class C3 extends C2 {
+  nat v3;
+}
+class C4 extends C {}
+main {
+  C2 o2;
+  C o;
+  C4 o4;
+  o2 = new C2();
+  o = new C();
+  o4 = new C4();
+  o.foo(null); //ok
+  if(true) {o2;} else {o;}; //ok, has type C
+  if(true) {o4;} else {o2;}; //ok, has type C
+  if(true) {o4;} else {null;}; ///ok, has type C4
+  //types of 'then' and 'else' branches mismatch:
+  if(true) {o4;} else {2;}; // <-- error
+  0;
+}

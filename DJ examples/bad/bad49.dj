@@ -1,0 +1,5 @@
+main {
+  null instanceof Object; //OK
+  new Object() instanceof Object; //OK
+  null instanceof C; //error: nonexistent class
+}

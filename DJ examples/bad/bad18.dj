@@ -1,0 +1,12 @@
+class C extends Object {
+  nat foo(Object o) {
+    nat i;
+    0;
+  }
+}
+main {
+  C o;
+  //types of 'then' and 'else' branches mismatch
+  if(true) {1;} else {o;}; 
+  0;
+}

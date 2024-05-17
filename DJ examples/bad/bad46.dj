@@ -1,0 +1,12 @@
+class C extends Object {
+  nat foo(Object o) {
+    nat i;
+    0;
+  }
+}
+main {
+  nat o;
+  if (o instanceof C) {0;} else {0;};  //non-object instanceof
+  0;
+}
+

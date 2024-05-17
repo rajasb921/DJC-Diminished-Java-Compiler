@@ -1,0 +1,13 @@
+class C1 extends Object {
+  nat foo(nat n) {0;}
+}
+class C2 extends C1 {
+  //Error:
+  //a superclass has a method with the same name but 
+  //  different signature (parameter/return type)
+  nat foo(Object o) {0;} 
+}
+main {
+  null;
+}
+

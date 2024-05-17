@@ -1,0 +1,3 @@
+class C extends D {} //Invalid superclass
+main {0;}
+

@@ -1,0 +1,7 @@
+class C extends Object {
+  nat m(nat n) {this.m(n);}
+}
+main {
+  nat n;
+  this.n;  //reference to 'this' outside of a class
+}

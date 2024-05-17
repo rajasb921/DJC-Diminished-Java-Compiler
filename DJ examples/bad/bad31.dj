@@ -1,0 +1,21 @@
+class C extends Object {
+  //no errors in this foo method
+  Object foo(Object o) {
+    C2 v2;
+    v2 = new C2();  //no error, returns the new v2 of type C2
+  }
+}
+class C2 extends C {
+  //error in this bar method
+  C2 bar(Object o) {
+    C v;
+    v = new C2(); //Method's declared and actual 
+                  //return types mismatch
+    //(cannot return v of *static* type C from method with 
+    // declared return type C2; have to return a
+    // value of type C2 or a subtype of C2)
+  }
+}
+main {
+  0;
+}

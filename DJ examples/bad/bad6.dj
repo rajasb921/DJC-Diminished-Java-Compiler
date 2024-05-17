@@ -1,0 +1,8 @@
+class C extends Object {
+  nat foo(nat n) {0;}
+  Object bar(Object o) {0;}
+  nat i; //Syntax error
+}
+main {
+  0;
+}

@@ -1,0 +1,11 @@
+class C extends Object {
+  nat foo(Object o) {
+    nat i;
+    0;
+  }
+}
+main {
+  C o;
+  o==0; //Type mismatch with == operator
+  0;
+}

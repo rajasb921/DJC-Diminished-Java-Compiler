@@ -1,0 +1,6 @@
+class C extends Object{}
+main {
+  nat x;
+  x;
+  y; //Unknown identifier
+}

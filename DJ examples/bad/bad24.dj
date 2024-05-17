@@ -1,0 +1,11 @@
+class C extends Object {
+  nat foo(Object o) {
+    nat i;
+    0;
+  }
+}
+main {
+  C o;
+  o + 1;  //non-nat type with + operator
+  0;
+}

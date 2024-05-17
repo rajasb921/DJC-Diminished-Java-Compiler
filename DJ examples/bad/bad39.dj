@@ -1,0 +1,6 @@
+class C extends Object{}
+main{
+  C c;
+  c = new D(); //invalid object type in new expression
+  0;
+}

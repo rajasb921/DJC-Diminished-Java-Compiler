@@ -1,0 +1,12 @@
+class C extends Object {
+  nat foo(Object o) {
+    nat i;
+    0;
+  }
+}
+main {
+  C o;
+  !true;
+  !o; //non-bool type in 'not' expression
+  0;
+}

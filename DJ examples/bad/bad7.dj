@@ -1,0 +1,7 @@
+class C extends Object {
+  nat foo(C2 n) {0;}  //Invalid declared parameter type
+  Object bar(Object o){0;}//Method's declared and actual return types mismatch
+}
+main {
+  0;
+}

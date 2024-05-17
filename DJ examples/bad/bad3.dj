@@ -1,0 +1,12 @@
+class C extends Object {
+  nat x;
+  nat y;
+}
+class D extends C {
+  Object z;
+  Object x; //Var declared multiple times 
+            //(here and in a superclass)
+}
+main {
+  0;
+}

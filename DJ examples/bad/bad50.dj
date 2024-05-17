@@ -1,0 +1,5 @@
+class C extends Object { static bool b; }
+class D extends Object { static bool b; }
+class E extends C { bool b; } //Variable declared multiple times
+                              //(here and in a superclass)
+main { 0; }

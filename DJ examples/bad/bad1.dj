@@ -1,0 +1,21 @@
+class LexError extends Object {
+  nat i;/            //lex error
+  nat five(nat < six) {  //lex error
+    867yy;    //syntax error (not a lex error!)
+    i = -9876;  //syntax error (not a lex error!)
+    i = 08p;    //syntax error 
+    i[4] = 9;   //lex error (may also be a syntax error
+               // after the lexer removes the brackets)
+    i +* 1;   //syntax error
+    //
+    i = =a; //syntax error
+    i = |a; //lex error
+    098.; //syntax error
+    if(9<4) {4;} else {9;}; //lex error (may also be syntax error)
+    4^4; //lex error (may also be syntax error)
+    9&9  //lex error and syntax error
+  }
+}
+main { 0; }
+   //
+//

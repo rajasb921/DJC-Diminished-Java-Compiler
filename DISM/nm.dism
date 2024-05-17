@@ -1,0 +1,8 @@
+rdn 1 ;
+rdn 2 ;
+mov 3 1 ;
+#LOOP: beq 2 0 #END ;
+ptn 1 ;
+sub 2 2 3 ;
+jmp 0 #LOOP ;
+#END: hlt 0 ;

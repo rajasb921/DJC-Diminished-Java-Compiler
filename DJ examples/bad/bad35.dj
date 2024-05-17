@@ -1,0 +1,13 @@
+class C extends Object {
+  nat n;
+  //Error in this method:
+  nat foo(nat unused) {
+    nat n;//This is not an error; the local variable n
+          //punctures the scope of the 
+          //variable field n declared on line 2
+    null; //Method's declared and actual return types mismatch
+  }
+}
+main {
+0;
+}

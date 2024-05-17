@@ -1,0 +1,2 @@
+class Object extends Object{}//This class is already declared.
+main{0;}

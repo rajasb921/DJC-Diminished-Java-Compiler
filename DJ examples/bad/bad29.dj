@@ -1,0 +1,22 @@
+class C extends Object {
+  nat foo(Object o) {
+    nat i;
+    0;
+  }
+  nat bar(C3 c3) {0;}
+}
+class C2 extends C {
+  nat v2;
+}
+class C3 extends C2 {
+  nat v3;
+}
+main {
+  C2 o2;
+  C o;
+  o2 = new C2();
+  o = new C();
+  o.foo(o2); //ok
+  o = new Object(); //Assignment-type mismatch
+  0;
+}

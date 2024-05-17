@@ -1,0 +1,16 @@
+class C1 extends Object { }
+class C2 extends Object { }
+class C3 extends C1 { }
+main {
+  C1 c1;
+  C2 c2;
+  C3 c3;
+  null==null; //OK
+  null==c3;  //OK
+  c3==null; //OK
+  c1==c3;  //OK because one side is a subtype of the other
+  c2==c3; //error: type mismatch with == operator
+          //because neither side of the == operator has a type that 
+          //is a subtype of the other side's type
+  c1==c2; //also a type mismatch with == operator
+}

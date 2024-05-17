@@ -1,0 +1,6 @@
+class C extends Object {
+  object o; //Invalid variable type
+}
+main {
+  0;
+}

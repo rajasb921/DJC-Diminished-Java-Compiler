@@ -1,0 +1,7 @@
+class C extends Object {
+  nat foo(Object o) {0;}
+  C2 bar(Object o){0;}//Invalid declared return type
+}
+main {
+  0;
+}

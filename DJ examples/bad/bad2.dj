@@ -1,0 +1,8 @@
+class C extends Object {
+  nat x;
+  nat y;
+  Object x; //Variable declared multiple times
+}
+main {
+  0;
+}
