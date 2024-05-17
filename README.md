@@ -18,9 +18,6 @@
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
   </ol>
@@ -45,6 +42,8 @@ Also included are some test cases used when building the compiler. These example
 ## Getting Started
 Since the source files for the compiler are part of the USF course curriculum, they are not directly available in this repo. In order to access all the source files for DJC, request access using Google drive. Otherwise, download the executable for DJC as well as all the files to run the DISM interpreter.
 
+Request access to the DJ compiler source files: https://docs.google.com/forms/d/e/1FAIpQLScvhnLnpUiu3eKPj1GYDGwVMGp1_mdrfiynO4b1lqwjcw6q0w/viewform?usp=sf_link
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 To build the DISM interpreter
@@ -55,6 +54,13 @@ sed -i '/extern YYSTYPE yylval/d' dism.tab.c
 gcc dism.tab.c ast.c interp.c -o sim-dism
 ```
 
+To build the DJC executable
+```sh
+flex dj.l
+bison -v dj.y
+sed -i '/extern YYSTYPE yylval/d' dj.tab.c
+gcc dj.tab.c ast.c symtbl.c typecheck.c codegen.c -o djc 
+```
 After generating the executable for the compiler as well as the DISM simulator, compile the test case programs using
 ```sh
 djc filename.dj
