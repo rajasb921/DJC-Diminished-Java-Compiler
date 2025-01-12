@@ -42,7 +42,6 @@ Also included are some test cases used when building the compiler. These example
 ## Getting Started
 Since the source files for the compiler are part of the USF course curriculum, they are not directly available in this repo. In order to access all the source files for DJC, request access using Google drive. Otherwise, download the executable for DJC as well as all the files to run the DISM interpreter.
 
-Request access to the DJ compiler source files: https://docs.google.com/forms/d/e/1FAIpQLScvhnLnpUiu3eKPj1GYDGwVMGp1_mdrfiynO4b1lqwjcw6q0w/viewform?usp=sf_link
 
 <!-- USAGE EXAMPLES -->
 ## Usage
